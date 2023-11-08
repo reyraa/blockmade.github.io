@@ -1,0 +1,719 @@
+<html lang="en-GB" style="--inner1Vh: 2.83px; --sbw: 0px;">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block Made</title>
+  <link rel="stylesheet" href="style.css">
+  <noscript>
+    <style>
+      @keyframes pulse {}
+
+      .animated {
+        animation-play-state: running !important;
+      }
+    </style>
+  </noscript>
+  <script
+    nonce="">!function () { "use strict"; function t(t, n) { let e; return (...o) => { clearTimeout(e), e = setTimeout((() => { t(...o) }), n) } } class n { constructor() { this.callbacks = [], window.addEventListener("DOMContentLoaded", (() => this.onDOMContentLoaded())) } onDOMContentLoaded() { this.callbacks.sort(((t, n) => t.priority - n.priority)).forEach((({ callback: t }) => t())) } runOnLoad(t) { "loading" === document.readyState ? this.callbacks.push(t) : t.callback() } } function e(t, e = Number.MAX_VALUE) { var o; (window.canva_scriptExecutor = null !== (o = window.canva_scriptExecutor) && void 0 !== o ? o : new n).runOnLoad({ callback: t, priority: e }) } class o { constructor(t) { this.items = [], this.previousWidth = document.documentElement.clientWidth, this.previousHeight = window.innerHeight; const n = t((() => this.onWindowResize()), 100); window.addEventListener("resize", n) } onWindowResize() { const t = document.documentElement.clientWidth, n = window.innerHeight, e = this.previousWidth !== t, o = this.previousHeight !== n; this.items.forEach((t => { const n = () => { t.callback(), t.executed = !0 }; (!t.executed || e && t.options.runOnWidthChange || o && t.options.runOnHeightChange) && n() })), this.previousWidth = t, this.previousHeight = n } runOnResize(t, n) { this.items.push({ callback: t, options: n, executed: n.runOnLoad }), this.items.sort(((t, n) => t.options.priority - n.options.priority)), n.runOnLoad && e(t, n.priority) } } function i(n, e, i = t) { var r; (window.canva_debounceResize = null !== (r = window.canva_debounceResize) && void 0 !== r ? r : new o(i)).runOnResize(n, { runOnLoad: !1, runOnWidthChange: !0, runOnHeightChange: !1, priority: Number.MAX_VALUE, ...e }) } const r = "--minfs", c = "--rzf", u = "--rfso", s = "--bfso"; function a(t, n, e = .001) { return Math.abs(t - n) < e } function d(t, n) { return window.getComputedStyle(t).getPropertyValue(n) } function l(t, n, e) { t.style.setProperty(n, e) } function m(t, n) { const e = document.createElement("div"); e.style.setProperty(t, n), document.body.append(e); const o = d(e, t); return e.remove(), o } function f() { const t = function () { const t = parseFloat(m("font-size", "0.1px")); return t > 1 ? t : 0 }(), n = function (t) { const n = 2 * Math.max(t, 1); return n / parseFloat(m("font-size", `${n}px`)) }(t); if (function (t) { if (0 === t) return; l(document.documentElement, r, `${t}px`), i((() => { const n = 100 * t, { clientWidth: e } = document.documentElement; l(document.documentElement, c, n > e ? (e / n).toPrecision(4) : null) }), { runOnLoad: !0 }) }(t * Math.max(1, n)), a(n, 1)) return; const e = a(parseFloat(d(document.documentElement, "font-size")), parseFloat(m("grid-template-columns", "1rem"))); l(document.documentElement, e ? u : s, n.toPrecision(4)) } function h() { document.querySelectorAll("img, image, video, svg").forEach((t => t.addEventListener("contextmenu", (t => t.preventDefault())))) } const p = "--sbw", g = "--inner1Vh"; function w(t, n, e) { t.style.setProperty(n, e) } function v() { w(document.documentElement, g, window.innerHeight / 100 + "px"), function () { const t = window.innerWidth - document.documentElement.clientWidth; w(document.documentElement, p, t >= 0 ? `${t}px` : null) }() } var y; const E = "undefined" != typeof window ? null === (y = window.navigator) || void 0 === y ? void 0 : y.userAgent : void 0; const b = !(!E || (O = E, !O.match(/AppleWebKit\//) || O.match(/Chrome\//) || O.match(/Chromium\//))); var O; function L() { document.querySelectorAll("svg").forEach((t => t.style.background = "url('data:image/png;base64,')")) } let x; function A() { x || (x = Array.from(document.querySelectorAll("foreignObject")).filter((t => 0 === t.getBoundingClientRect().width))); const t = function () { const t = document.createElement("div"); t.style.fontSize = "100vw", document.body.append(t); const n = parseFloat(window.getComputedStyle(t).fontSize); return t.remove(), n / window.innerWidth }(); Array.from(x).forEach((n => function (t) { return new Promise(((n, e) => { const o = t.querySelector("img"); o && !o.complete ? (o.addEventListener("load", (() => n())), o.addEventListener("error", (() => e()))) : n() })) }(n).finally((() => function (t, n) { const e = Array.from(t.children); e.forEach(((t, n) => { if (t.hasAttribute("data-foreign-object-container")) t.style.transformOrigin = "", t.style.transform = ""; else { const o = document.createElement("div"); o.setAttribute("data-foreign-object-container", ""), t.insertAdjacentElement("beforebegin", o), t.remove(), o.append(t), e[n] = o } })); const o = t.getScreenCTM(); if (!o) return; const { a: i, b: r, c: c, d: u } = o.scale(n); e.forEach((t => { if (!t.hasAttribute("data-foreign-object-container")) return; const { style: n } = t; n.transformOrigin = "0px 0px", n.transform = `matrix(${i}, ${r}, ${c}, ${u}, 0, 0)` })) }(n, t))))) } [function () { e(f) }, function () { i(v, { runOnLoad: !0, runOnHeightChange: !0, priority: 1 }) }, function () { b && i(A, { runOnLoad: !0 }) }, function () { b && e(L) }, function () { e(h) }].forEach((t => t())) }();</script>
+</head>
+
+<body>
+  <div id="root">
+    <section id="home"
+      style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;">
+      <div id="HMBcDNGK1kN1ZV5y"
+        style="grid-area:1 / 1 / 2 / 4;display:grid;position:absolute;min-height:100%;min-width:100%;">
+        <div id="pIPeGLOyUDOKBNJ6" style="z-index:0;">
+          <div id="AnnpdahoXHrD42Hg" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+            <div id="PUXBrJs3WCKpaA7q" style="width:100%;height:100%;opacity:1.0;">
+              <div id="LFP6darjTlDjCnX1"
+                style="background-color:#101728;opacity:1.0;transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="knkNFNWboJjwuLoZ" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+        <div id="Nq5yfKR9eALt49FX">
+          <div id="r2YbOj3scWD4S6Ke" style="display:grid;position:relative;">
+            <div id="xHYK5WqiYt5d1eAl" style="z-index:3;">
+              <div id="oY0uVVggA36GHUa1" style="padding-top:73.27272727%;">
+                <div id="ENvgJj4CDMhDmq9S" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+                  <div class="animation_container" style="width:100%;height:100%;">
+                    <div class="animated"
+                      style="width: 100%; height: 100%; animation: 1000ms 100ms both pan-LEFT-97dc4ad4-34fc-413a-b63b-4921407b9974, 400ms linear both linear_fade;">
+                      <div id="MXkTflQSZR5IqeEQ" style="width:100%;height:100%;opacity:1.0;">
+                        <div id="ybs7qYfQIjIej68e"
+                          style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                          <div id="cyvfzd5RhY8uZ2XR"
+                            style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: 0s;">
+                            <img
+                              src="https://image.canva.com/XnEh9menK0lzh1LCjlD9qA%3D%3D/celib1GBc0WUytJcY01RlA%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231107%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231107T224538Z&amp;X-Amz-Expires=54706&amp;X-Amz-Signature=65100c85ee23f2a2114be0706a470588f32047cb16a5f097b737340e7faab5c8&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2013%3A57%3A24%20GMT"
+                              alt="Gradient Shape Logo Element" loading="eager"
+                              style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="JLDj1ua4kFIIP3Oy" style="z-index:2;">
+              <div id="HZcphrUuro0ACMcC" style="box-sizing:border-box;width:100%;height:100%;">
+                <div class="animation_container" style="width:100%;height:100%;">
+                  <div class="animated"
+                    style="width: 100%; height: 100%; animation: 1000ms 100ms both pan-LEFT-69488e23-ef21-4997-95e0-7cd42d53c40f, 400ms linear both linear_fade;">
+                    <div id="oqzBtiGBJXLqYsFt"
+                      style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                      <p id="JkuiBOUHfjIfuWgW"
+                        style="color:#ffffff;font-family:YAEahSPMowE-0;line-height:1.39483299em;text-transform:none;letter-spacing:0.022em;">
+                        <span id="zzt3r2Qjeoa0JJP3" style="color:#ffffff;">Block Made</span><br></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ctJR9YPrVYJ2AK2r" style="z-index:6;">
+          <div id="ggoswxKA1A4cI8TD" style="box-sizing:border-box;width:100%;height:100%;">
+            <div class="animation_container" style="width:100%;height:100%;">
+              <div style="width:100%;height:100%;transform:rotate(0deg);overflow:hidden;">
+                <div class="animated"
+                  style="width: 100%; height: 100%; animation: 1162ms 100ms both baseline-LEFT-8733f973-97fc-4ecc-8691-c75d3fca7cbd;">
+                  <div id="U1CM1TjpfgiYPtsj"
+                    style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                    <p id="MOJsXQAtJFsNDaDm"
+                      style="color:#ffffff;font-family:YAEahSPMowE-0;line-height:1.03846114em;text-transform:none;letter-spacing:0em;">
+                      <span id="R4JwzRQp7cZpiJAo" style="color:#ffffff;">Mobile apps studio</span><br></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="UQKfavp7DkPjaqoV">
+          <div id="Sv2OOjwRF9EjIHzx" style="display:grid;position:relative;">
+            <div id="l9XbhzzbSpbw3DY5" style="display:grid;position:relative;grid-area:2 / 2 / 3 / 3;">
+              <div id="MS6KUJPnJ4Uwq3O0" style="z-index:8;">
+                <div id="cXaeV17cd4AeBDZU" style="padding-top:31.45454545%;">
+                  <div id="ZvZ7uhva2kMQeGYa" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+                    <div class="animation_container" style="width:100%;height:100%;">
+                      <div style="width:100%;height:100%;transform:rotate(0deg);overflow:hidden;">
+                        <div class="animated"
+                          style="width: 100%; height: 100%; animation: 1041ms 100ms both baseline-LEFT-28377d74-ac12-445d-94da-ec7d01846a49;">
+                          <div id="xj77ND1EpKBQmGiV" style="width:100%;height:100%;opacity:1.0;">
+                            <div id="bg6CgiaSYVVap2Jg"
+                              style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                              <div id="bMtOfixcS1RSpT64"
+                                style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: 0s;">
+                                <img
+                                  src="https://image.canva.com/bEpVTiyH6QjHZ77aKqM9YA%3D%3D/nHMPBKuEcJtrNQXN-R1SGw%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231108%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231108T033109Z&amp;X-Amz-Expires=39920&amp;X-Amz-Signature=8ee4349d4b7318451532dffde92696bbae2f8227a58956175267119bbc564e41&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A36%3A29%20GMT"
+                                  alt="Gradient Solid Capsule Shape" loading="eager"
+                                  style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="YVj2peSsACRKum76" style="z-index:9;">
+                <div id="qWsskt3he8iMlyiD" style="box-sizing:border-box;width:100%;height:100%;">
+                  <div class="animation_container" style="width:100%;height:100%;">
+                    <div style="width:100%;height:100%;transform:rotate(0deg);overflow:hidden;">
+                      <div class="animated"
+                        style="width: 100%; height: 100%; animation: 1041ms 100ms both baseline-LEFT-a8fd1368-3ef0-4604-99ab-a8aacc5068c9;">
+                        <div id="wzuOuWgvxLOyJVnA"
+                          style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                          <p id="fUYelLctdnzIWwL4"
+                            style="color:#0f1819;font-family:YAEahSPMowE-0;line-height:1.37506875em;text-align:center;text-transform:none;letter-spacing:0.064em;">
+                            <span id="glz3p6AvZ2Vdupyf" style="color:#0f1819;">Learn More</span><br></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="CV7mAQ9o36JERNgb">
+          <div id="yua0qDzKoV2EWsAT" style="display:grid;position:relative;">
+            <div id="rER6uHbBnAr7fKtY" style="z-index:4;">
+              <div id="uHgpXodaGpOb3QoT" style="padding-top:100%;transform:rotate(0deg);">
+                <div id="d8y9G5Td6aX1gkTK" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+                  <div id="Ecl9wg5d2Kd333ys" style="width:100%;height:100%;opacity:1.0;">
+                    <div id="viqwwjBa3P8MUTZR"
+                      style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                      <div id="PWkTYUqNDIyQIMLv"
+                        style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: 0s;">
+                        <img
+                          src="https://image.canva.com/45ETZJS5gekzXvBAWdMTmA%3D%3D/O4OvMqmeoGoD_lp7LMxplA%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231108%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231108T080710Z&amp;X-Amz-Expires=22936&amp;X-Amz-Signature=4885bc370f9acd5415c1ade0e7e920def072dcc2a1d1d4aba23403b1aa10e5e0&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A29%3A26%20GMT"
+                          alt="Purple, Red and Orange Radial Gradient Illustration" loading="lazy"
+                          style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="qZtWZwW9evyP7Mpm" style="z-index:5;">
+              <div id="jlviJAdmxk1xu81D" style="padding-top:100%;">
+                <div id="k5I05hsghDQ1bnLP" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+                  <div class="animation_container" style="width:100%;height:100%;">
+                    <div class="animated"
+                      style="width: 100%; height: 100%; animation: 500ms 100ms both fade-RIGHT-e39a5e62-469c-41c8-8009-f08d796d8529;">
+                      <svg id="kDkr47gcJc24Wixu" viewBox="0 0 500.0 500.0"
+                        style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url('data:image/png;base64,');">
+                        <g id="VDNMIQlRfObV5MkF" style="transform:scale(1, 1);">
+                          <foreignObject id="TIVhCqjhTCTI9mPw" style="width:500px;height:500px;">
+                            <div data-foreign-object-container=""
+                              style="transform-origin: 0px 0px; transform: matrix(0.924844, 0, 0, 0.924844, 0, 0);">
+                              <div id="s7q76NdBUJtvsZdg"
+                                style="clip-path:path('M0.0,468.8999938964844 L0.0,31.100000381469727 C0.0,13.899999618530273 13.899999618530273,0.0 31.100000381469727,0.0 L468.9999942779541,0.0 C486.1000061035156,0.0 500.0,13.899999618530273 500.0,31.100000381469727 L500.0,468.9999942779541 C500.0,486.19999504089355 486.1000003814697,500.0999946594238 468.8999996185303,500.0999946594238 L31.100000381469727,500.0999946594238 C13.899999618530273,500.0 0.0,486.1000061035156 0.0,468.8999938964844 Z');">
+                                <div id="ntKwH17kn2p3pF3d"
+                                  style="transform: scale(1, 1); transform-origin: 250px 250.5px; animation: 0s;"><img
+                                    src="https://image.canva.com/6Gp2d3QO3ByJ4MZsYhOuxw%3D%3D/_ITwC28fBBzi5hJtBHZS-Q%3D%3D.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231107%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231107T222523Z&amp;X-Amz-Expires=57717&amp;X-Amz-Signature=d0997a95516ccd89b1ac0cad25d17a3be1ab429f6d55641957602e53cf196e6c&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A27%3A20%20GMT"
+                                    alt="Person Holding a Smartphone" loading="eager"
+                                    style="transform:translate(-161.31959764px, -10.78499089px) rotate(0deg);transform-origin:385.80210138px 257.28177636px;width:771.60420276px;height:514.56355271px;display:block;opacity:1.0;object-fit:fill;">
+                                </div>
+                              </div>
+                            </div>
+                          </foreignObject>
+                        </g>
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about"
+      style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;margin-top:-1px;">
+      <div id="UeV2dsSmkkkdSRUR"
+        style="grid-area:1 / 1 / 2 / 4;display:grid;position:absolute;min-height:100%;min-width:100%;">
+        <div id="U8dSs7pOO6eXogJf" style="z-index:0;">
+          <div id="m659rXfKDxIVOOLY" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+            <div id="fJysV7t8VcROqFua" style="width:100%;height:100%;opacity:1.0;">
+              <div id="EVoQ3KUCgFLWoFkd"
+                style="background-color:#101728;opacity:1.0;transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="I5i1wLsnM5exUnar" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+        <div id="ycZHd8jEnDsEITnT">
+          <div id="y7UenJ7Ip2WIWYQ2" style="display:grid;position:relative;grid-area:2 / 2 / 3 / 3;">
+            <div id="vyDUB1zgztiYUxo4" style="z-index:3;">
+              <div id="iRyf2wJibPfIan6l" style="box-sizing:border-box;width:100%;height:100%;">
+                <div class="animation_container" style="width:100%;height:100%;">
+                  <div style="width:100%;height:100%;transform:rotate(0deg);overflow:hidden;">
+                    <div class="animated"
+                      style="width: 100%; height: 100%; animation: 877ms 100ms both baseline-LEFT-a7cbb992-1478-44da-88f4-4c567e60e03e;">
+                      <div id="FAbHp04mZVnLguSG"
+                        style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                        <p id="n8yb1ToL0X7BqgOb"
+                          style="color:#000000;direction:ltr;font-family:YAEahSPMowE-0;margin-left:0em;line-height:1.15625542em;text-align:center;text-transform:none;letter-spacing:0.022em;">
+                          <span id="KB6KlVWcPx4C7ags" style="color:#9340ff;">Block Made</span><span
+                            id="qJe9fxTFPxwdyWO0"
+                            style="text-decoration-line:none;color:#ffffff;font-style:normal;font-weight:400;"> is a
+                            group of developers passionate about mobile apps.</span><br></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="BeSezt9NjySig3BE" style="z-index:2;">
+              <div id="mBvrXlYkoIwQ732p" style="box-sizing:border-box;width:100%;height:100%;">
+                <div class="animation_container" style="width:100%;height:100%;">
+                  <div style="width:100%;height:100%;transform:rotate(0deg);overflow:hidden;">
+                    <div class="animated"
+                      style="width: 100%; height: 100%; animation: 877ms 100ms both baseline-RIGHT-baad4891-7c17-4d6d-9734-b08782e0c7ac;">
+                      <div id="peWVSi9wNaosozal"
+                        style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                        <p id="yBZjPmKrGISqRGIk"
+                          style="color:#ffffff;direction:ltr;font-family:YAFdJo1JGkU-0;margin-left:0em;line-height:1.49999375em;text-align:center;text-transform:none;letter-spacing:0em;">
+                          <span id="IaA5iYMvMh16zoxd" style="color:#ffffff;font-weight:700;">We build mobile
+                            applications to improve your daily life. </span><br></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features"
+      style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;margin-top:-1px;">
+      <div id="ScyplKAasv43WrLP"
+        style="grid-area:1 / 1 / 2 / 4;display:grid;position:absolute;min-height:100%;min-width:100%;">
+        <div id="lJdhARTAuxpFC0HV" style="z-index:0;">
+          <div id="xKePdL3YHqmE2cdK" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+            <div id="Y43sPG2UiYFE9Bsq" style="width:100%;height:100%;opacity:1.0;">
+              <div id="Mah0q3874En10Oc1"
+                style="background-color:#101728;opacity:1.0;transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="e5G7mQcDe6AXLF6k" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+        <div id="qqHC32R6RbUoIFph">
+          <div id="MlCQ0U2xxfaMZ3xK" style="display:grid;position:relative;">
+            <div id="f741OnSKkjv1f5zL" style="z-index:3;">
+              <div id="VSx1QVQsiJFVjlNi" style="box-sizing:border-box;width:100%;height:100%;">
+                <div class="animation_container" style="width:100%;height:100%;">
+                  <div style="width:100%;height:100%;transform:rotate(0deg);overflow:hidden;">
+                    <div class="animated"
+                      style="width: 100%; height: 100%; animation: 1041ms 100ms both baseline-LEFT-c8038300-adb1-4843-91e8-bc27f9a66f76;">
+                      <div id="xT8ehv1WE7oaflMX"
+                        style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                        <p id="LVOn6b21nfF7hHY5"
+                          style="color:#9340ff;direction:ltr;font-family:YAEahSPMowE-0;margin-left:0em;line-height:1.15625542em;text-align:left;text-transform:none;letter-spacing:0.022em;">
+                          <span id="bs11glU7WHg210Fl" style="color:#9340ff;">Passion for Lifestyle &amp;
+                            Entertainment</span><br></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="mAxBGaRuEqfBzHwG" style="z-index:4;">
+              <div id="mN43m9DYBv2GwloL" style="box-sizing:border-box;width:100%;height:100%;">
+                <div class="animation_container" style="width:100%;height:100%;">
+                  <div style="width:100%;height:100%;transform:rotate(0deg);overflow:hidden;">
+                    <div class="animated"
+                      style="width: 100%; height: 100%; animation: 1041ms 100ms both baseline-LEFT-207e6ddb-8250-4c29-a4b3-5c4c4e73965b;">
+                      <div id="uo0n0B2RanVkcUy2"
+                        style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                        <p id="RD8eqWA46KETqi6g"
+                          style="color:#ffffff;direction:ltr;font-family:YAFdJo1JGkU-0;margin-left:0em;line-height:1.49999375em;text-transform:none;letter-spacing:0em;">
+                          <span id="qoe5X0PZcT2YkUZu" style="color:#ffffff;font-weight:700;">We're driven by a deep
+                            passion to create lifestyle and entertainment apps that enhance your daily experiences. From
+                            health trackers to music communities, we're dedicated to redefining how you live and
+                            play</span><br></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="oVLNW34WMutrvPGx" style="z-index:1;">
+          <div id="hQzxUMbY2BmNbx8S" style="padding-top:100%;">
+            <div id="wNjBo3JE58hYeXte" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+              <div class="animation_container" style="width:100%;height:100%;">
+                <div class="animated"
+                  style="width: 100%; height: 100%; animation: 617ms 100ms both rise-RIGHT-3c28f706-3251-4a70-91e1-e22cb9f67aca, 400ms linear both linear_fade;">
+                  <svg id="UsVgIWn1Hmcec826" viewBox="0 0 500.0 500.0"
+                    style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url('data:image/png;base64,');">
+                    <g id="c9TKI1g8xWVG3CAa" style="transform:scale(1, 1);">
+                      <foreignObject id="lfuDyTgLiL6oA4IT" style="width:500px;height:500px;">
+                        <div data-foreign-object-container=""
+                          style="transform-origin: 0px 0px; transform: matrix(0.924844, 0, 0, 0.924844, 0, 0);">
+                          <div id="cc4K0qi2wb33csxM"
+                            style="clip-path:path('M0.0,468.8999938964844 L0.0,31.100000381469727 C0.0,13.899999618530273 13.899999618530273,0.0 31.100000381469727,0.0 L468.9999942779541,0.0 C486.1000061035156,0.0 500.0,13.899999618530273 500.0,31.100000381469727 L500.0,468.9999942779541 C500.0,486.19999504089355 486.1000003814697,500.0999946594238 468.8999996185303,500.0999946594238 L31.100000381469727,500.0999946594238 C13.899999618530273,500.0 0.0,486.1000061035156 0.0,468.8999938964844 Z');">
+                            <div id="ynxFXfOs7cv3i2EN"
+                              style="transform: scale(1, 1); transform-origin: 250px 250.5px; animation: 0s;"><img
+                                src="https://image.canva.com/c4179LQg8St3xapm5cy-og%3D%3D/Cwo_jDljfWhYaZnhmU9GXg%3D%3D.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231108%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231108T121711Z&amp;X-Amz-Expires=6152&amp;X-Amz-Signature=34fce40d44e8a5c110891c2cf542f10c5e0d2644e4a558c2eda2dbbe184b98d0&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2013%3A59%3A43%20GMT"
+                                alt="Person Holding Iphone With Black Case" loading="eager"
+                                style="transform:translate(0px, -124.95px) rotate(0deg);transform-origin:250px 375px;width:500px;height:750px;display:block;opacity:1.0;object-fit:fill;">
+                            </div>
+                          </div>
+                        </div>
+                      </foreignObject>
+                    </g>
+                  </svg></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="page-4"
+      style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;margin-top:-1px;">
+      <div id="SJndlPBaPxUMpZW2"
+        style="grid-area:1 / 1 / 2 / 4;display:grid;position:absolute;min-height:100%;min-width:100%;">
+        <div id="HHR0ztroY5oxvaAG" style="z-index:0;">
+          <div id="GkeExiOxE9dj5ANj" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+            <div id="aTQ0faty1Bpq70Q3" style="width:100%;height:100%;opacity:1.0;">
+              <div id="hpIN9DaifcyOySGi"
+                style="background-color:#101728;opacity:1.0;transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="eyGiLV3JfqBmWUDV" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+        <div id="R34SStLJMMRzqbKW" style="z-index:1;">
+          <div id="IG1VRwl1ur0PxgGc" style="padding-top:100%;">
+            <div id="cEI9yS9dfDtav2Bj" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+              <div class="animation_container" style="width:100%;height:100%;">
+                <div class="animated"
+                  style="width: 100%; height: 100%; animation: 609ms 100ms both rise-LEFT-2d158487-40c2-4854-95a9-9acc6de11f02, 400ms linear both linear_fade;">
+                  <svg id="KwptVwt3VQi1NoAw" viewBox="0 0 500.0 500.0"
+                    style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url('data:image/png;base64,');">
+                    <g id="cT7lTfkbqTvdFPZq" style="transform:scale(1, 1);">
+                      <foreignObject id="tN6jP0Xy7uzKG61A" style="width:500px;height:500px;">
+                        <div data-foreign-object-container=""
+                          style="transform-origin: 0px 0px; transform: matrix(0.924844, 0, 0, 0.924844, 0, 0);">
+                          <div id="AvzBhQSgQpSmCShp"
+                            style="clip-path:path('M0.0,468.8999938964844 L0.0,31.100000381469727 C0.0,13.899999618530273 13.899999618530273,0.0 31.100000381469727,0.0 L468.9999942779541,0.0 C486.1000061035156,0.0 500.0,13.899999618530273 500.0,31.100000381469727 L500.0,468.9999942779541 C500.0,486.19999504089355 486.1000003814697,500.0999946594238 468.8999996185303,500.0999946594238 L31.100000381469727,500.0999946594238 C13.899999618530273,500.0 0.0,486.1000061035156 0.0,468.8999938964844 Z');">
+                            <div id="ZTNYUlXeumXMxXWn"
+                              style="transform: scale(1, 1); transform-origin: 250px 250.5px; animation: 0s;"><img
+                                src="https://image.canva.com/AJuvOepDELQtZIfKoPcUUw%3D%3D/nhBjtttFUjlRsAF4MgdWrQ%3D%3D.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231107%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231107T135838Z&amp;X-Amz-Expires=87727&amp;X-Amz-Signature=70d0482eed13acc57fcb0506a2aa137bb39beafc9b8334e6a0aca5e70507bede&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A20%3A45%20GMT"
+                                alt="Young guy texting on mobile phone" loading="lazy"
+                                style="transform:translate(0px, -124.95px) rotate(0deg);transform-origin:250px 375px;width:500px;height:750px;display:block;opacity:1.0;object-fit:fill;">
+                            </div>
+                          </div>
+                        </div>
+                      </foreignObject>
+                    </g>
+                  </svg></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u4PgxdO2tGAPTSAN">
+          <div id="mq7t5K1SggSg0VtE" style="display:grid;position:relative;">
+            <div id="qd1L7qXGhXfU4yWl" style="z-index:3;">
+              <div id="zflr4p1fIq2LxH8M" style="box-sizing:border-box;width:100%;height:100%;">
+                <div class="animation_container" style="width:100%;height:100%;">
+                  <div style="width:100%;height:100%;transform:rotate(0deg);overflow:hidden;">
+                    <div class="animated"
+                      style="width: 100%; height: 100%; animation: 980ms 100ms both baseline-RIGHT-6a927f49-23d3-4c45-afe7-702e1bcecc4d;">
+                      <div id="D1gBNrKbnMtm1eAd"
+                        style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                        <p id="kLT8MKB39CZtuMI1"
+                          style="color:#9340ff;direction:ltr;font-family:YAEahSPMowE-0;margin-left:0em;line-height:1.15625542em;text-align:left;text-transform:none;letter-spacing:0.022em;">
+                          <span id="EAuHwuWJJahV8LLA" style="color:#9340ff;">Boundaries of Innovation</span><br></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="qznOTk12PPuc8gFn" style="z-index:4;">
+              <div id="mmpJtU8He8WJjddq" style="box-sizing:border-box;width:100%;height:100%;">
+                <div class="animation_container" style="width:100%;height:100%;">
+                  <div style="width:100%;height:100%;transform:rotate(0deg);overflow:hidden;">
+                    <div class="animated"
+                      style="width: 100%; height: 100%; animation: 980ms 100ms both baseline-RIGHT-f1e1df72-921e-4d1c-9c3c-45aec94df33a;">
+                      <div id="oyhRQhjpFTsqY5P6"
+                        style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                        <p id="iTgp0IiP8HpORppn"
+                          style="color:#ffffff;direction:ltr;font-family:YAFdJo1JGkU-0;margin-left:0em;line-height:1.49999375em;text-transform:none;letter-spacing:0.037em;">
+                          <span id="chIaQEEOhJ754GBl" style="color:#ffffff;font-weight:700;"> We thrive on innovation
+                            and welcome groundbreaking ideas. Join us in challenging the status quo, because together,
+                            we can create a brighter and more engaging future.</span><br></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="page-5"
+      style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;margin-top:-1px;">
+      <div id="qBJmOO4x8r3vrBbd"
+        style="grid-area:1 / 1 / 2 / 4;display:grid;position:absolute;min-height:100%;min-width:100%;">
+        <div id="thpn0DCGidnptREq" style="z-index:0;">
+          <div id="F19JnlqqRweOrAlC" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+            <div id="ZGb99DOP7DaK5s7B" style="width:100%;height:100%;opacity:1.0;">
+              <div id="OvUcLf6onobHUj6V"
+                style="background-color:#101728;opacity:1.0;transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ghqWp4ipoPd0bEjk" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+        <div id="iAfNrHfa4RjQqDdS">
+          <div id="qrmoYwopiEfai5ts" style="display:grid;position:relative;">
+            <div id="K5mPshe35SR1bi91" style="z-index:3;">
+              <div id="L1LP4IWy7us6Im8t" style="box-sizing:border-box;width:100%;height:100%;">
+                <div class="animation_container" style="width:100%;height:100%;">
+                  <div style="width:100%;height:100%;transform:rotate(0deg);overflow:hidden;">
+                    <div class="animated"
+                      style="width: 100%; height: 100%; animation: 1136ms 100ms both baseline-LEFT-e230ce3b-2642-427a-9e1a-f1604f9aca80;">
+                      <div id="be4Dv20xvp4JWVCc"
+                        style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                        <p id="hywvaNIbofarKovX"
+                          style="color:#9340ff;direction:ltr;font-family:YAEahSPMowE-0;margin-left:0em;line-height:1.15625542em;text-align:left;text-transform:none;letter-spacing:0.022em;">
+                          <span id="hdrVnn8xXoJ47PEA" style="color:#9340ff;">Your Ideas, Our Creations</span><br></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="DthdvJlSqG6BabAE" style="z-index:4;">
+              <div id="avfmBjO42Pu6GlFT" style="box-sizing:border-box;width:100%;height:100%;">
+                <div class="animation_container" style="width:100%;height:100%;">
+                  <div style="width:100%;height:100%;transform:rotate(0deg);overflow:hidden;">
+                    <div class="animated"
+                      style="width: 100%; height: 100%; animation: 1136ms 100ms both baseline-LEFT-184e5a62-14d8-4c31-b079-340ddfeaef3d;">
+                      <div id="Vi3RRdYaav0JRlBW"
+                        style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                        <p id="FLB2ZruLzrHTvLDm"
+                          style="color:#ffffff;direction:ltr;font-family:YAFdJo1JGkU-0;margin-left:0em;line-height:1.49999375em;text-transform:none;letter-spacing:0.037em;">
+                          <span id="W2J22T4GHHocx1GX" style="color:#ffffff;font-weight:700;">Your ideas are a treasure
+                            trove of inspiration. We're here to turn your dreams into reality. Share your concepts with
+                            us, and together, we can co-create amazing lifestyle and entertainment apps.</span><br></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="cO274sRITyqWZirL" style="z-index:1;">
+          <div id="i0Q3XS4WWr3mxnm9" style="padding-top:100%;">
+            <div id="mSGwojw4NqUfiU91" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+              <div class="animation_container" style="width:100%;height:100%;">
+                <div class="animated"
+                  style="width: 100%; height: 100%; animation: 625ms 100ms both rise-RIGHT-496a1b80-8b22-4d0d-bb58-e0460c6bbde7, 400ms linear both linear_fade;">
+                  <svg id="wtpZNpkzcQsqZyhW" viewBox="0 0 500.0 500.0"
+                    style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url('data:image/png;base64,');">
+                    <g id="xYz3VVL6iXbZDHto" style="transform:scale(1, 1);">
+                      <foreignObject id="pgklAcLCssCaawPL" style="width:500px;height:500px;">
+                        <div data-foreign-object-container=""
+                          style="transform-origin: 0px 0px; transform: matrix(0.924844, 0, 0, 0.924844, 0, 0);">
+                          <div id="umUOuCHFvuVafZdS"
+                            style="clip-path:path('M0.0,468.8999938964844 L0.0,31.100000381469727 C0.0,13.899999618530273 13.899999618530273,0.0 31.100000381469727,0.0 L468.9999942779541,0.0 C486.1000061035156,0.0 500.0,13.899999618530273 500.0,31.100000381469727 L500.0,468.9999942779541 C500.0,486.19999504089355 486.1000003814697,500.0999946594238 468.8999996185303,500.0999946594238 L31.100000381469727,500.0999946594238 C13.899999618530273,500.0 0.0,486.1000061035156 0.0,468.8999938964844 Z');">
+                            <div id="L15E1C9vkPtEJF80"
+                              style="transform: scale(1, 1); transform-origin: 250px 250.5px; animation: 0s;"><img
+                                src="https://image.canva.com/xftORxFpjooFaXdEJ4Abyg%3D%3D/_ITwC28fBBzi5hJtBHZS-Q%3D%3D.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231108%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231108T115615Z&amp;X-Amz-Expires=9135&amp;X-Amz-Signature=fab60b098f89057538e0072530be1cc9feac00bc38f27126ab699992e41d4694&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A28%3A30%20GMT"
+                                alt="Person Holding Iphone X and Ballpoint Pen" loading="lazy"
+                                style="transform:translate(-55.75786241px, -100.82655948px) rotate(0deg);transform-origin:463.52506114px 309.11327515px;width:927.05012229px;height:618.2265503px;display:block;opacity:1.0;object-fit:fill;">
+                            </div>
+                          </div>
+                        </div>
+                      </foreignObject>
+                    </g>
+                  </svg></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact"
+      style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;margin-top:-1px;">
+      <div id="G5gw79GLRoVJoRSO"
+        style="grid-area:1 / 1 / 2 / 4;display:grid;position:absolute;min-height:100%;min-width:100%;">
+        <div id="N7sUNFtqtQiGK8kc" style="z-index:0;">
+          <div id="uWhZpUdA0ixUevbs" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+            <div id="lTwyaFkprJMkBlli" style="width:100%;height:100%;opacity:1.0;">
+              <div id="rEuEtXUaNpQCFrNb"
+                style="background-color:#101728;opacity:1.0;transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="vp8oX6BE88sStXIs" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+        <div id="Jm7a2vYTDfLNvuB2">
+          <div id="ZzRECEzxXAJBVINV" style="display:grid;position:relative;">
+            <div id="x3OTaOkGcFmqLDir" style="z-index:6;">
+              <div id="W3bL8PaSZt3ezasC" style="padding-top:73.27272727%;">
+                <div id="R1a2wf5zdhIOrYyE" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+                  <div class="animation_container" style="width:100%;height:100%;">
+                    <div class="animated"
+                      style="width: 100%; height: 100%; animation: 1000ms 100ms both pan-LEFT-a234d117-d721-41af-88a2-fd701ac81e3b, 400ms linear both linear_fade;">
+                      <div id="L9QD1rJBhMJY3izd" style="width:100%;height:100%;opacity:1.0;">
+                        <div id="GCVuxHZ7ObPZOXGR"
+                          style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                          <div id="cNIrtBxWnGEHM9nd"
+                            style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: 0s;">
+                            <img
+                              src="https://image.canva.com/XnEh9menK0lzh1LCjlD9qA%3D%3D/celib1GBc0WUytJcY01RlA%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231107%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231107T224538Z&amp;X-Amz-Expires=54706&amp;X-Amz-Signature=65100c85ee23f2a2114be0706a470588f32047cb16a5f097b737340e7faab5c8&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2013%3A57%3A24%20GMT"
+                              alt="Gradient Shape Logo Element" loading="lazy"
+                              style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="AFFRNKKPyM6gFihj" style="z-index:5;">
+              <div id="OMOVS9y6kqWUxMwH" style="box-sizing:border-box;width:100%;height:100%;">
+                <div class="animation_container" style="width:100%;height:100%;">
+                  <div class="animated"
+                    style="width: 100%; height: 100%; animation: 1000ms 100ms both pan-LEFT-a8afadda-9703-4b01-8115-99682b2707f6, 400ms linear both linear_fade;">
+                    <div id="WAXb6aYLOBT5re8P"
+                      style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                      <p id="Z7H9EorVm3Dbs4CL"
+                        style="color:#ffffff;font-family:YAEahSPMowE-0;line-height:1.39285466em;text-transform:none;letter-spacing:0.022em;">
+                        <span id="F3S8EyN98FwOp2ld" style="color:#ffffff;">Block Made</span><br></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="T39kqloMZiDAIaUB">
+          <div id="N77Xrg0nbYk5JBei" style="display:grid;position:relative;">
+            <div id="EH4LXrlKSO6Vxw3x" style="z-index:2;">
+              <div id="DPe4zEfoW7BS2XgD" style="box-sizing:border-box;width:100%;height:100%;">
+                <div class="animation_container" style="width:100%;height:100%;">
+                  <div style="width:100%;height:100%;transform:rotate(0deg);overflow:hidden;">
+                    <div class="animated"
+                      style="width: 100%; height: 100%; animation: 1162ms 100ms both baseline-RIGHT-1881e246-5ed7-4b3e-90d2-6b9d669eae50;">
+                      <div id="ByKQiodXcIc51oP8"
+                        style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                        <p id="vRickpmjhVRQ0l3r"
+                          style="color:#9340ff;font-family:YAEahSPMowE-0;line-height:1.16071636em;text-transform:none;letter-spacing:0.022em;">
+                          <span id="LarJu5hQbDvqUhnA" style="color:#9340ff;">Connect</span><br></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="FpPiVg9GFcHxw16Y" style="z-index:3;">
+              <div id="VsZAPIPAvQguYPwJ" style="box-sizing:border-box;width:100%;height:100%;">
+                <div class="animation_container" style="width:100%;height:100%;">
+                  <div style="width:100%;height:100%;transform:rotate(0deg);overflow:hidden;">
+                    <div class="animated"
+                      style="width: 100%; height: 100%; animation: 1162ms 100ms both baseline-RIGHT-1eb95306-2830-4d3b-a61e-49b0e4b942ce;">
+                      <div id="XdMMxGSAExfMP7CO"
+                        style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                        <p id="OlTHw0XCMBvr8ocj"
+                          style="color:#ffffff;font-family:YAFdJo1JGkU-0;line-height:1.54166024em;text-transform:none;letter-spacing:0.06em;">
+                          <span id="G0kMfHBQgHmr7XDh" style="color:#ffffff;">info@block-made.com</span><br></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="QmHdomyr5BDzgjr8" style="z-index:7;">
+          <div id="XVwlqNqmCLUkvtSX" style="padding-top:100%;">
+            <div id="ZvTSzyN9nnmxeCdM" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+              <div class="animation_container" style="width:100%;height:100%;">
+                <div class="animated"
+                  style="width: 100%; height: 100%; animation: 1000ms 100ms both rise-RIGHT-9f8209b9-cd6b-4d59-99b2-68ead417a2e1, 400ms linear both linear_fade;">
+                  <div id="koaKNOsvL5Fp7Hnr" style="width:100%;height:100%;opacity:1.0;">
+                    <div id="aHnj7MiJsoAHy2jc"
+                      style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                      <div id="D1GMs9ggvwc5SAB7"
+                        style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: 0s;">
+                        <img
+                          src="https://image.canva.com/HbapRLbPjuEAQPR0RH5eSQ%3D%3D/hjr4YZZOaGNzCQeThk9WWw%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231107%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231107T143103Z&amp;X-Amz-Expires=85697&amp;X-Amz-Signature=16bedc3c53fae60b1498ff78163c90fcee648689ac6e0f16532bdfd6de6079ad&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A19%3A20%20GMT"
+                          alt="In Blue Logo Vector" loading="eager"
+                          style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="jF5p81vmaOEcZkXm" style="z-index:9;">
+          <div id="dNnvA1YnLJwUZ4Y0" style="padding-top:99.63636364%;">
+            <div id="ctY4sspwis6ZEWhx" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+              <div class="animation_container" style="width:100%;height:100%;">
+                <div class="animated"
+                  style="width: 100%; height: 100%; animation: 1000ms 100ms both rise-RIGHT-4016a7d0-5413-49e2-9254-622c10751a8f, 400ms linear both linear_fade;">
+                  <div id="rN4Hhyc772GfC4Q9" style="width:100%;height:100%;opacity:1.0;">
+                    <div id="KV2WS9dF35Rr7bI7"
+                      style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                      <div id="Uv1uZJj6ywQ07qN7"
+                        style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: 0s;">
+                        <img
+                          src="https://image.canva.com/42UxAOPo3-CHPd5cTW89ew%3D%3D/4ayji6doJYx-T1yfQuQZZQ%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231107%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231107T142524Z&amp;X-Amz-Expires=85983&amp;X-Amz-Signature=37d5aecae468907d2c717aa7965d048a368227704f00308772ddbb82a1758fe2&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A18%3A27%20GMT"
+                          alt="Simple Facebook Icon" loading="lazy"
+                          style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="GmPGAimmlgIuC90h" style="z-index:8;">
+          <div id="s1GO2RLwbf3wHw6o" style="padding-top:100%;">
+            <div id="hsNMmgoC2VbN4GKj" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+              <div class="animation_container" style="width:100%;height:100%;">
+                <div class="animated"
+                  style="width: 100%; height: 100%; animation: 1000ms 100ms both rise-RIGHT-4e5a9bfd-945c-40b9-ae66-9aca9a421ea9, 400ms linear both linear_fade;">
+                  <div id="LG9atEx9XaeayYHH" style="width:100%;height:100%;opacity:1.0;">
+                    <div id="eIZ2caWwQuQ6LrV5"
+                      style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                      <div id="n3gDNs2Olk68p3TX"
+                        style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: 0s;">
+                        <img
+                          src="https://image.canva.com/CQW5NNG7kOBcV7VT7aHYyw%3D%3D/4ayji6doJYx-T1yfQuQZZQ%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231107%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231107T132549Z&amp;X-Amz-Expires=89313&amp;X-Amz-Signature=d787db51b36661e6e00314d209fd6fb11f2aab95efdaefc7a0bb6bc070a5c0e5&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A14%3A22%20GMT"
+                          alt="Simple Instagram Icon" loading="lazy"
+                          style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="EYa6YmV2w0kQ9u88" style="z-index:10;">
+          <div id="CE5EGCNp0IQlpaaC" style="padding-top:100%;">
+            <div id="LMKtiwSpPLXcjlLw" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+              <div class="animation_container" style="width:100%;height:100%;">
+                <div class="animated"
+                  style="width: 100%; height: 100%; animation: 1000ms 100ms both rise-RIGHT-781e3eab-ca56-4f1c-8487-fa49835a0f7b, 400ms linear both linear_fade;">
+                  <div id="x175qlSiMlCfZAOA" style="width:100%;height:100%;opacity:1.0;">
+                    <div id="ytSMFOx4RSM5gFQs"
+                      style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                      <div id="S67w1Thcna867mFw"
+                        style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: 0s;">
+                        <img
+                          src="https://image.canva.com/W0E-8B1tnY6NzJb7pbaZTA%3D%3D/4ayji6doJYx-T1yfQuQZZQ%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231107%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231107T210235Z&amp;X-Amz-Expires=62487&amp;X-Amz-Signature=cd29ba71b07d2f371c8078e5a9449a131dad72bac59b55783fbc7c0aeb80e50d&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A24%3A02%20GMT"
+                          alt="Simple Twitter Icon" loading="eager"
+                          style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      nonce="">!function () { "use strict"; const e = Array.from(document.getElementsByTagName("img")), t = e => { const t = e.parentElement; t && (t.style.animation = "none") }; e.forEach((e => { e.complete ? t(e) : e.addEventListener("load", (() => { t(e) })) })) }();</script>
+    <script
+      nonce="">!function () { "use strict"; class t { constructor() { this.callbacks = [], window.addEventListener("DOMContentLoaded", (() => this.onDOMContentLoaded())) } onDOMContentLoaded() { this.callbacks.sort(((t, e) => t.priority - e.priority)).forEach((({ callback: t }) => t())) } runOnLoad(t) { "loading" === document.readyState ? this.callbacks.push(t) : t.callback() } } const e = async t => { const o = t.classList.contains("animated"), r = () => window.requestAnimationFrame((() => t.style.animationPlayState = "running")); o && n(t) ? (await a(t), r()) : o ? r() : null != t.firstElementChild && e(t.firstElementChild) }, n = t => { const e = t.getElementsByTagName("img").length > 0, n = t.getElementsByTagName("video").length > 0; return o(t) || e || n }, o = t => { var e; return !!(null === (e = t.textContent) || void 0 === e ? void 0 : e.trim().length) }, a = async t => { const e = [], n = t.getElementsByTagName("img"); for (let t = 0; t < n.length; t++) { const o = n.item(t); e.push(r(o)) } const o = t.getElementsByTagName("video"); for (let t = 0; t < o.length; t++) { const n = o.item(t); e.push(s(n)) } const a = new Map; document.fonts.forEach((t => a.set(`${t.family}_${t.style}_${t.weight}`, t))); const l = t.getElementsByTagName("span"); for (let t = 0; t < l.length; t++) { const n = l.item(t); e.push(i(n, a)) } return Promise.all(e) }, r = t => new Promise(((e, n) => { t.complete ? e() : (t.loading = "eager", t.addEventListener("load", (() => e())), t.addEventListener("error", (() => n()))) })), s = t => new Promise(((e, n) => { t.readyState >= 2 || t.poster ? e() : (t.addEventListener("loadeddata", (() => e())), t.addEventListener("error", (() => n()))) })), i = (t, e) => { const { fontFamily: n, fontStyle: o, fontWeight: a } = getComputedStyle(t), r = e.get(`${n}_${o}_${a}`); return (null == r ? void 0 : r.loaded) || document.fonts.ready }; !function (e, n = Number.MAX_VALUE) { var o; (window.canva_scriptExecutor = null !== (o = window.canva_scriptExecutor) && void 0 !== o ? o : new t).runOnLoad({ callback: e, priority: n }) }((() => { (() => { const t = document.querySelectorAll(".animation_container"); if (0 === t.length) return; const n = new IntersectionObserver((t => { t.forEach((t => { if (!t.isIntersecting) return; const o = t.target; e(o), n.unobserve(o) })) }), { threshold: .01 }); t.forEach((t => n.observe(t))) })() })) }();</script>
+    <script
+      nonce="">!function () { "use strict"; function t(t, n) { let e; return (...o) => { clearTimeout(e), e = setTimeout((() => { t(...o) }), n) } } class n { constructor() { this.callbacks = [], window.addEventListener("DOMContentLoaded", (() => this.onDOMContentLoaded())) } onDOMContentLoaded() { this.callbacks.sort(((t, n) => t.priority - n.priority)).forEach((({ callback: t }) => t())) } runOnLoad(t) { "loading" === document.readyState ? this.callbacks.push(t) : t.callback() } } function e(t, e = Number.MAX_VALUE) { var o; (window.canva_scriptExecutor = null !== (o = window.canva_scriptExecutor) && void 0 !== o ? o : new n).runOnLoad({ callback: t, priority: e }) } class o { constructor(t) { this.items = [], this.previousWidth = document.documentElement.clientWidth, this.previousHeight = window.innerHeight; const n = t((() => this.onWindowResize()), 100); window.addEventListener("resize", n) } onWindowResize() { const t = document.documentElement.clientWidth, n = window.innerHeight, e = this.previousWidth !== t, o = this.previousHeight !== n; this.items.forEach((t => { const n = () => { t.callback(), t.executed = !0 }; (!t.executed || e && t.options.runOnWidthChange || o && t.options.runOnHeightChange) && n() })), this.previousWidth = t, this.previousHeight = n } runOnResize(t, n) { this.items.push({ callback: t, options: n, executed: n.runOnLoad }), this.items.sort(((t, n) => t.options.priority - n.options.priority)), n.runOnLoad && e(t, n.priority) } } function i(n, e, i = t) { var r; (window.canva_debounceResize = null !== (r = window.canva_debounceResize) && void 0 !== r ? r : new o(i)).runOnResize(n, { runOnLoad: !1, runOnWidthChange: !0, runOnHeightChange: !1, priority: Number.MAX_VALUE, ...e }) } const r = "--minfs", c = "--rzf", u = "--rfso", s = "--bfso"; function a(t, n, e = .001) { return Math.abs(t - n) < e } function d(t, n) { return window.getComputedStyle(t).getPropertyValue(n) } function l(t, n, e) { t.style.setProperty(n, e) } function m(t, n) { const e = document.createElement("div"); e.style.setProperty(t, n), document.body.append(e); const o = d(e, t); return e.remove(), o } function f() { const t = function () { const t = parseFloat(m("font-size", "0.1px")); return t > 1 ? t : 0 }(), n = function (t) { const n = 2 * Math.max(t, 1); return n / parseFloat(m("font-size", `${n}px`)) }(t); if (function (t) { if (0 === t) return; l(document.documentElement, r, `${t}px`), i((() => { const n = 100 * t, { clientWidth: e } = document.documentElement; l(document.documentElement, c, n > e ? (e / n).toPrecision(4) : null) }), { runOnLoad: !0 }) }(t * Math.max(1, n)), a(n, 1)) return; const e = a(parseFloat(d(document.documentElement, "font-size")), parseFloat(m("grid-template-columns", "1rem"))); l(document.documentElement, e ? u : s, n.toPrecision(4)) } function h() { document.querySelectorAll("img, image, video, svg").forEach((t => t.addEventListener("contextmenu", (t => t.preventDefault())))) } const p = "--sbw", g = "--inner1Vh"; function w(t, n, e) { t.style.setProperty(n, e) } function v() { w(document.documentElement, g, window.innerHeight / 100 + "px"), function () { const t = window.innerWidth - document.documentElement.clientWidth; w(document.documentElement, p, t >= 0 ? `${t}px` : null) }() } var y; const E = "undefined" != typeof window ? null === (y = window.navigator) || void 0 === y ? void 0 : y.userAgent : void 0; const b = !(!E || (O = E, !O.match(/AppleWebKit\//) || O.match(/Chrome\//) || O.match(/Chromium\//))); var O; function L() { document.querySelectorAll("svg").forEach((t => t.style.background = "url('data:image/png;base64,')")) } let x; function A() { x || (x = Array.from(document.querySelectorAll("foreignObject")).filter((t => 0 === t.getBoundingClientRect().width))); const t = function () { const t = document.createElement("div"); t.style.fontSize = "100vw", document.body.append(t); const n = parseFloat(window.getComputedStyle(t).fontSize); return t.remove(), n / window.innerWidth }(); Array.from(x).forEach((n => function (t) { return new Promise(((n, e) => { const o = t.querySelector("img"); o && !o.complete ? (o.addEventListener("load", (() => n())), o.addEventListener("error", (() => e()))) : n() })) }(n).finally((() => function (t, n) { const e = Array.from(t.children); e.forEach(((t, n) => { if (t.hasAttribute("data-foreign-object-container")) t.style.transformOrigin = "", t.style.transform = ""; else { const o = document.createElement("div"); o.setAttribute("data-foreign-object-container", ""), t.insertAdjacentElement("beforebegin", o), t.remove(), o.append(t), e[n] = o } })); const o = t.getScreenCTM(); if (!o) return; const { a: i, b: r, c: c, d: u } = o.scale(n); e.forEach((t => { if (!t.hasAttribute("data-foreign-object-container")) return; const { style: n } = t; n.transformOrigin = "0px 0px", n.transform = `matrix(${i}, ${r}, ${c}, ${u}, 0, 0)` })) }(n, t))))) } [function () { e(f) }, function () { i(v, { runOnLoad: !0, runOnHeightChange: !0, priority: 1 }) }, function () { b && i(A, { runOnLoad: !0 }) }, function () { b && e(L) }, function () { e(h) }].forEach((t => t())) }();</script>
+  </div>
+  <script
+    nonce="">(function () { var js = "window['__CF$cv$params']={r:'822de99567f74528',t:'MTY5OTQ0NzUxOS43NjcwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);"; var _0xh = document.createElement('iframe'); _0xh.height = 1; _0xh.width = 1; _0xh.style.position = 'absolute'; _0xh.style.top = 0; _0xh.style.left = 0; _0xh.style.border = 'none'; _0xh.style.visibility = 'hidden'; document.body.appendChild(_0xh); function handler() { var _0xi = _0xh.contentDocument || _0xh.contentWindow.document; if (_0xi) { var _0xj = _0xi.createElement('script'); _0xj.innerHTML = js; _0xi.getElementsByTagName('head')[0].appendChild(_0xj); } } if (document.readyState !== 'loading') { handler(); } else if (window.addEventListener) { document.addEventListener('DOMContentLoaded', handler); } else { var prev = document.onreadystatechange || function () { }; document.onreadystatechange = function (e) { prev(e); if (document.readyState !== 'loading') { document.onreadystatechange = prev; handler(); } }; } })();</script>
+  <iframe height="1" width="1"
+    style="position: absolute; top: 0px; left: 0px; border: medium; visibility: hidden;"></iframe>
+</body>
+
+</html>
