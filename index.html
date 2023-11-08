@@ -14,8 +14,6 @@
       }
     </style>
   </noscript>
-  <script
-    nonce="">!function () { "use strict"; function t(t, n) { let e; return (...o) => { clearTimeout(e), e = setTimeout((() => { t(...o) }), n) } } class n { constructor() { this.callbacks = [], window.addEventListener("DOMContentLoaded", (() => this.onDOMContentLoaded())) } onDOMContentLoaded() { this.callbacks.sort(((t, n) => t.priority - n.priority)).forEach((({ callback: t }) => t())) } runOnLoad(t) { "loading" === document.readyState ? this.callbacks.push(t) : t.callback() } } function e(t, e = Number.MAX_VALUE) { var o; (window.canva_scriptExecutor = null !== (o = window.canva_scriptExecutor) && void 0 !== o ? o : new n).runOnLoad({ callback: t, priority: e }) } class o { constructor(t) { this.items = [], this.previousWidth = document.documentElement.clientWidth, this.previousHeight = window.innerHeight; const n = t((() => this.onWindowResize()), 100); window.addEventListener("resize", n) } onWindowResize() { const t = document.documentElement.clientWidth, n = window.innerHeight, e = this.previousWidth !== t, o = this.previousHeight !== n; this.items.forEach((t => { const n = () => { t.callback(), t.executed = !0 }; (!t.executed || e && t.options.runOnWidthChange || o && t.options.runOnHeightChange) && n() })), this.previousWidth = t, this.previousHeight = n } runOnResize(t, n) { this.items.push({ callback: t, options: n, executed: n.runOnLoad }), this.items.sort(((t, n) => t.options.priority - n.options.priority)), n.runOnLoad && e(t, n.priority) } } function i(n, e, i = t) { var r; (window.canva_debounceResize = null !== (r = window.canva_debounceResize) && void 0 !== r ? r : new o(i)).runOnResize(n, { runOnLoad: !1, runOnWidthChange: !0, runOnHeightChange: !1, priority: Number.MAX_VALUE, ...e }) } const r = "--minfs", c = "--rzf", u = "--rfso", s = "--bfso"; function a(t, n, e = .001) { return Math.abs(t - n) < e } function d(t, n) { return window.getComputedStyle(t).getPropertyValue(n) } function l(t, n, e) { t.style.setProperty(n, e) } function m(t, n) { const e = document.createElement("div"); e.style.setProperty(t, n), document.body.append(e); const o = d(e, t); return e.remove(), o } function f() { const t = function () { const t = parseFloat(m("font-size", "0.1px")); return t > 1 ? t : 0 }(), n = function (t) { const n = 2 * Math.max(t, 1); return n / parseFloat(m("font-size", `${n}px`)) }(t); if (function (t) { if (0 === t) return; l(document.documentElement, r, `${t}px`), i((() => { const n = 100 * t, { clientWidth: e } = document.documentElement; l(document.documentElement, c, n > e ? (e / n).toPrecision(4) : null) }), { runOnLoad: !0 }) }(t * Math.max(1, n)), a(n, 1)) return; const e = a(parseFloat(d(document.documentElement, "font-size")), parseFloat(m("grid-template-columns", "1rem"))); l(document.documentElement, e ? u : s, n.toPrecision(4)) } function h() { document.querySelectorAll("img, image, video, svg").forEach((t => t.addEventListener("contextmenu", (t => t.preventDefault())))) } const p = "--sbw", g = "--inner1Vh"; function w(t, n, e) { t.style.setProperty(n, e) } function v() { w(document.documentElement, g, window.innerHeight / 100 + "px"), function () { const t = window.innerWidth - document.documentElement.clientWidth; w(document.documentElement, p, t >= 0 ? `${t}px` : null) }() } var y; const E = "undefined" != typeof window ? null === (y = window.navigator) || void 0 === y ? void 0 : y.userAgent : void 0; const b = !(!E || (O = E, !O.match(/AppleWebKit\//) || O.match(/Chrome\//) || O.match(/Chromium\//))); var O; function L() { document.querySelectorAll("svg").forEach((t => t.style.background = "url('data:image/png;base64,')")) } let x; function A() { x || (x = Array.from(document.querySelectorAll("foreignObject")).filter((t => 0 === t.getBoundingClientRect().width))); const t = function () { const t = document.createElement("div"); t.style.fontSize = "100vw", document.body.append(t); const n = parseFloat(window.getComputedStyle(t).fontSize); return t.remove(), n / window.innerWidth }(); Array.from(x).forEach((n => function (t) { return new Promise(((n, e) => { const o = t.querySelector("img"); o && !o.complete ? (o.addEventListener("load", (() => n())), o.addEventListener("error", (() => e()))) : n() })) }(n).finally((() => function (t, n) { const e = Array.from(t.children); e.forEach(((t, n) => { if (t.hasAttribute("data-foreign-object-container")) t.style.transformOrigin = "", t.style.transform = ""; else { const o = document.createElement("div"); o.setAttribute("data-foreign-object-container", ""), t.insertAdjacentElement("beforebegin", o), t.remove(), o.append(t), e[n] = o } })); const o = t.getScreenCTM(); if (!o) return; const { a: i, b: r, c: c, d: u } = o.scale(n); e.forEach((t => { if (!t.hasAttribute("data-foreign-object-container")) return; const { style: n } = t; n.transformOrigin = "0px 0px", n.transform = `matrix(${i}, ${r}, ${c}, ${u}, 0, 0)` })) }(n, t))))) } [function () { e(f) }, function () { i(v, { runOnLoad: !0, runOnHeightChange: !0, priority: 1 }) }, function () { b && i(A, { runOnLoad: !0 }) }, function () { b && e(L) }, function () { e(h) }].forEach((t => t())) }();</script>
 </head>
 
 <body>
@@ -49,7 +47,7 @@
                           <div id="cyvfzd5RhY8uZ2XR"
                             style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: 0s;">
                             <img
-                              src="https://image.canva.com/XnEh9menK0lzh1LCjlD9qA%3D%3D/celib1GBc0WUytJcY01RlA%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231107%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231107T224538Z&amp;X-Amz-Expires=54706&amp;X-Amz-Signature=65100c85ee23f2a2114be0706a470588f32047cb16a5f097b737340e7faab5c8&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2013%3A57%3A24%20GMT"
+                              src="./block-made-log.png"
                               alt="Gradient Shape Logo Element" loading="eager"
                               style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
                           </div>
@@ -110,7 +108,7 @@
                               <div id="bMtOfixcS1RSpT64"
                                 style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: 0s;">
                                 <img
-                                  src="https://image.canva.com/bEpVTiyH6QjHZ77aKqM9YA%3D%3D/nHMPBKuEcJtrNQXN-R1SGw%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231108%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231108T033109Z&amp;X-Amz-Expires=39920&amp;X-Amz-Signature=8ee4349d4b7318451532dffde92696bbae2f8227a58956175267119bbc564e41&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A36%3A29%20GMT"
+                                  src="./button-gradient.svg"
                                   alt="Gradient Solid Capsule Shape" loading="eager"
                                   style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
                               </div>
@@ -153,7 +151,7 @@
                       <div id="PWkTYUqNDIyQIMLv"
                         style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: 0s;">
                         <img
-                          src="https://image.canva.com/45ETZJS5gekzXvBAWdMTmA%3D%3D/O4OvMqmeoGoD_lp7LMxplA%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231108%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231108T080710Z&amp;X-Amz-Expires=22936&amp;X-Amz-Signature=4885bc370f9acd5415c1ade0e7e920def072dcc2a1d1d4aba23403b1aa10e5e0&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A29%3A26%20GMT"
+                          src="./radial-gradient.svg"
                           alt="Purple, Red and Orange Radial Gradient Illustration" loading="lazy"
                           style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
                       </div>
@@ -178,7 +176,7 @@
                                 style="clip-path:path('M0.0,468.8999938964844 L0.0,31.100000381469727 C0.0,13.899999618530273 13.899999618530273,0.0 31.100000381469727,0.0 L468.9999942779541,0.0 C486.1000061035156,0.0 500.0,13.899999618530273 500.0,31.100000381469727 L500.0,468.9999942779541 C500.0,486.19999504089355 486.1000003814697,500.0999946594238 468.8999996185303,500.0999946594238 L31.100000381469727,500.0999946594238 C13.899999618530273,500.0 0.0,486.1000061035156 0.0,468.8999938964844 Z');">
                                 <div id="ntKwH17kn2p3pF3d"
                                   style="transform: scale(1, 1); transform-origin: 250px 250.5px; animation: 0s;"><img
-                                    src="https://image.canva.com/6Gp2d3QO3ByJ4MZsYhOuxw%3D%3D/_ITwC28fBBzi5hJtBHZS-Q%3D%3D.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231107%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231107T222523Z&amp;X-Amz-Expires=57717&amp;X-Amz-Signature=d0997a95516ccd89b1ac0cad25d17a3be1ab429f6d55641957602e53cf196e6c&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A27%3A20%20GMT"
+                                    src="./image-1.jpg"
                                     alt="Person Holding a Smartphone" loading="eager"
                                     style="transform:translate(-161.31959764px, -10.78499089px) rotate(0deg);transform-origin:385.80210138px 257.28177636px;width:771.60420276px;height:514.56355271px;display:block;opacity:1.0;object-fit:fill;">
                                 </div>
@@ -327,7 +325,7 @@
                             style="clip-path:path('M0.0,468.8999938964844 L0.0,31.100000381469727 C0.0,13.899999618530273 13.899999618530273,0.0 31.100000381469727,0.0 L468.9999942779541,0.0 C486.1000061035156,0.0 500.0,13.899999618530273 500.0,31.100000381469727 L500.0,468.9999942779541 C500.0,486.19999504089355 486.1000003814697,500.0999946594238 468.8999996185303,500.0999946594238 L31.100000381469727,500.0999946594238 C13.899999618530273,500.0 0.0,486.1000061035156 0.0,468.8999938964844 Z');">
                             <div id="ynxFXfOs7cv3i2EN"
                               style="transform: scale(1, 1); transform-origin: 250px 250.5px; animation: 0s;"><img
-                                src="https://image.canva.com/c4179LQg8St3xapm5cy-og%3D%3D/Cwo_jDljfWhYaZnhmU9GXg%3D%3D.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231108%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231108T121711Z&amp;X-Amz-Expires=6152&amp;X-Amz-Signature=34fce40d44e8a5c110891c2cf542f10c5e0d2644e4a558c2eda2dbbe184b98d0&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2013%3A59%3A43%20GMT"
+                                src="./image-2.jpg"
                                 alt="Person Holding Iphone With Black Case" loading="eager"
                                 style="transform:translate(0px, -124.95px) rotate(0deg);transform-origin:250px 375px;width:500px;height:750px;display:block;opacity:1.0;object-fit:fill;">
                             </div>
@@ -373,7 +371,7 @@
                             style="clip-path:path('M0.0,468.8999938964844 L0.0,31.100000381469727 C0.0,13.899999618530273 13.899999618530273,0.0 31.100000381469727,0.0 L468.9999942779541,0.0 C486.1000061035156,0.0 500.0,13.899999618530273 500.0,31.100000381469727 L500.0,468.9999942779541 C500.0,486.19999504089355 486.1000003814697,500.0999946594238 468.8999996185303,500.0999946594238 L31.100000381469727,500.0999946594238 C13.899999618530273,500.0 0.0,486.1000061035156 0.0,468.8999938964844 Z');">
                             <div id="ZTNYUlXeumXMxXWn"
                               style="transform: scale(1, 1); transform-origin: 250px 250.5px; animation: 0s;"><img
-                                src="https://image.canva.com/AJuvOepDELQtZIfKoPcUUw%3D%3D/nhBjtttFUjlRsAF4MgdWrQ%3D%3D.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231107%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231107T135838Z&amp;X-Amz-Expires=87727&amp;X-Amz-Signature=70d0482eed13acc57fcb0506a2aa137bb39beafc9b8334e6a0aca5e70507bede&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A20%3A45%20GMT"
+                                src="./image-3.jpg"
                                 alt="Young guy texting on mobile phone" loading="lazy"
                                 style="transform:translate(0px, -124.95px) rotate(0deg);transform-origin:250px 375px;width:500px;height:750px;display:block;opacity:1.0;object-fit:fill;">
                             </div>
@@ -499,7 +497,7 @@
                             style="clip-path:path('M0.0,468.8999938964844 L0.0,31.100000381469727 C0.0,13.899999618530273 13.899999618530273,0.0 31.100000381469727,0.0 L468.9999942779541,0.0 C486.1000061035156,0.0 500.0,13.899999618530273 500.0,31.100000381469727 L500.0,468.9999942779541 C500.0,486.19999504089355 486.1000003814697,500.0999946594238 468.8999996185303,500.0999946594238 L31.100000381469727,500.0999946594238 C13.899999618530273,500.0 0.0,486.1000061035156 0.0,468.8999938964844 Z');">
                             <div id="L15E1C9vkPtEJF80"
                               style="transform: scale(1, 1); transform-origin: 250px 250.5px; animation: 0s;"><img
-                                src="https://image.canva.com/xftORxFpjooFaXdEJ4Abyg%3D%3D/_ITwC28fBBzi5hJtBHZS-Q%3D%3D.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231108%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231108T115615Z&amp;X-Amz-Expires=9135&amp;X-Amz-Signature=fab60b098f89057538e0072530be1cc9feac00bc38f27126ab699992e41d4694&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A28%3A30%20GMT"
+                                src="./image-1.jpg"
                                 alt="Person Holding Iphone X and Ballpoint Pen" loading="lazy"
                                 style="transform:translate(-55.75786241px, -100.82655948px) rotate(0deg);transform-origin:463.52506114px 309.11327515px;width:927.05012229px;height:618.2265503px;display:block;opacity:1.0;object-fit:fill;">
                             </div>
@@ -543,7 +541,7 @@
                           <div id="cNIrtBxWnGEHM9nd"
                             style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: 0s;">
                             <img
-                              src="https://image.canva.com/XnEh9menK0lzh1LCjlD9qA%3D%3D/celib1GBc0WUytJcY01RlA%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231107%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231107T224538Z&amp;X-Amz-Expires=54706&amp;X-Amz-Signature=65100c85ee23f2a2114be0706a470588f32047cb16a5f097b737340e7faab5c8&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2013%3A57%3A24%20GMT"
+                              src="./block-made-log.png"
                               alt="Gradient Shape Logo Element" loading="lazy"
                               style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
                           </div>
@@ -609,111 +607,12 @@
             </div>
           </div>
         </div>
-        <div id="QmHdomyr5BDzgjr8" style="z-index:7;">
-          <div id="XVwlqNqmCLUkvtSX" style="padding-top:100%;">
-            <div id="ZvTSzyN9nnmxeCdM" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
-              <div class="animation_container" style="width:100%;height:100%;">
-                <div class="animated"
-                  style="width: 100%; height: 100%; animation: 1000ms 100ms both rise-RIGHT-9f8209b9-cd6b-4d59-99b2-68ead417a2e1, 400ms linear both linear_fade;">
-                  <div id="koaKNOsvL5Fp7Hnr" style="width:100%;height:100%;opacity:1.0;">
-                    <div id="aHnj7MiJsoAHy2jc"
-                      style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
-                      <div id="D1GMs9ggvwc5SAB7"
-                        style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: 0s;">
-                        <img
-                          src="https://image.canva.com/HbapRLbPjuEAQPR0RH5eSQ%3D%3D/hjr4YZZOaGNzCQeThk9WWw%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231107%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231107T143103Z&amp;X-Amz-Expires=85697&amp;X-Amz-Signature=16bedc3c53fae60b1498ff78163c90fcee648689ac6e0f16532bdfd6de6079ad&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A19%3A20%20GMT"
-                          alt="In Blue Logo Vector" loading="eager"
-                          style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="jF5p81vmaOEcZkXm" style="z-index:9;">
-          <div id="dNnvA1YnLJwUZ4Y0" style="padding-top:99.63636364%;">
-            <div id="ctY4sspwis6ZEWhx" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
-              <div class="animation_container" style="width:100%;height:100%;">
-                <div class="animated"
-                  style="width: 100%; height: 100%; animation: 1000ms 100ms both rise-RIGHT-4016a7d0-5413-49e2-9254-622c10751a8f, 400ms linear both linear_fade;">
-                  <div id="rN4Hhyc772GfC4Q9" style="width:100%;height:100%;opacity:1.0;">
-                    <div id="KV2WS9dF35Rr7bI7"
-                      style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
-                      <div id="Uv1uZJj6ywQ07qN7"
-                        style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: 0s;">
-                        <img
-                          src="https://image.canva.com/42UxAOPo3-CHPd5cTW89ew%3D%3D/4ayji6doJYx-T1yfQuQZZQ%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231107%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231107T142524Z&amp;X-Amz-Expires=85983&amp;X-Amz-Signature=37d5aecae468907d2c717aa7965d048a368227704f00308772ddbb82a1758fe2&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A18%3A27%20GMT"
-                          alt="Simple Facebook Icon" loading="lazy"
-                          style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="GmPGAimmlgIuC90h" style="z-index:8;">
-          <div id="s1GO2RLwbf3wHw6o" style="padding-top:100%;">
-            <div id="hsNMmgoC2VbN4GKj" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
-              <div class="animation_container" style="width:100%;height:100%;">
-                <div class="animated"
-                  style="width: 100%; height: 100%; animation: 1000ms 100ms both rise-RIGHT-4e5a9bfd-945c-40b9-ae66-9aca9a421ea9, 400ms linear both linear_fade;">
-                  <div id="LG9atEx9XaeayYHH" style="width:100%;height:100%;opacity:1.0;">
-                    <div id="eIZ2caWwQuQ6LrV5"
-                      style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
-                      <div id="n3gDNs2Olk68p3TX"
-                        style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: 0s;">
-                        <img
-                          src="https://image.canva.com/CQW5NNG7kOBcV7VT7aHYyw%3D%3D/4ayji6doJYx-T1yfQuQZZQ%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231107%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231107T132549Z&amp;X-Amz-Expires=89313&amp;X-Amz-Signature=d787db51b36661e6e00314d209fd6fb11f2aab95efdaefc7a0bb6bc070a5c0e5&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A14%3A22%20GMT"
-                          alt="Simple Instagram Icon" loading="lazy"
-                          style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="EYa6YmV2w0kQ9u88" style="z-index:10;">
-          <div id="CE5EGCNp0IQlpaaC" style="padding-top:100%;">
-            <div id="LMKtiwSpPLXcjlLw" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
-              <div class="animation_container" style="width:100%;height:100%;">
-                <div class="animated"
-                  style="width: 100%; height: 100%; animation: 1000ms 100ms both rise-RIGHT-781e3eab-ca56-4f1c-8487-fa49835a0f7b, 400ms linear both linear_fade;">
-                  <div id="x175qlSiMlCfZAOA" style="width:100%;height:100%;opacity:1.0;">
-                    <div id="ytSMFOx4RSM5gFQs"
-                      style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
-                      <div id="S67w1Thcna867mFw"
-                        style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: 0s;">
-                        <img
-                          src="https://image.canva.com/W0E-8B1tnY6NzJb7pbaZTA%3D%3D/4ayji6doJYx-T1yfQuQZZQ%3D%3D.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQYCGKMUH25PN7VSL%2F20231107%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231107T210235Z&amp;X-Amz-Expires=62487&amp;X-Amz-Signature=cd29ba71b07d2f371c8078e5a9449a131dad72bac59b55783fbc7c0aeb80e50d&amp;X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&amp;response-expires=Wed%2C%2008%20Nov%202023%2014%3A24%3A02%20GMT"
-                          alt="Simple Twitter Icon" loading="eager"
-                          style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
-    <script
-      nonce="">!function () { "use strict"; const e = Array.from(document.getElementsByTagName("img")), t = e => { const t = e.parentElement; t && (t.style.animation = "none") }; e.forEach((e => { e.complete ? t(e) : e.addEventListener("load", (() => { t(e) })) })) }();</script>
-    <script
-      nonce="">!function () { "use strict"; class t { constructor() { this.callbacks = [], window.addEventListener("DOMContentLoaded", (() => this.onDOMContentLoaded())) } onDOMContentLoaded() { this.callbacks.sort(((t, e) => t.priority - e.priority)).forEach((({ callback: t }) => t())) } runOnLoad(t) { "loading" === document.readyState ? this.callbacks.push(t) : t.callback() } } const e = async t => { const o = t.classList.contains("animated"), r = () => window.requestAnimationFrame((() => t.style.animationPlayState = "running")); o && n(t) ? (await a(t), r()) : o ? r() : null != t.firstElementChild && e(t.firstElementChild) }, n = t => { const e = t.getElementsByTagName("img").length > 0, n = t.getElementsByTagName("video").length > 0; return o(t) || e || n }, o = t => { var e; return !!(null === (e = t.textContent) || void 0 === e ? void 0 : e.trim().length) }, a = async t => { const e = [], n = t.getElementsByTagName("img"); for (let t = 0; t < n.length; t++) { const o = n.item(t); e.push(r(o)) } const o = t.getElementsByTagName("video"); for (let t = 0; t < o.length; t++) { const n = o.item(t); e.push(s(n)) } const a = new Map; document.fonts.forEach((t => a.set(`${t.family}_${t.style}_${t.weight}`, t))); const l = t.getElementsByTagName("span"); for (let t = 0; t < l.length; t++) { const n = l.item(t); e.push(i(n, a)) } return Promise.all(e) }, r = t => new Promise(((e, n) => { t.complete ? e() : (t.loading = "eager", t.addEventListener("load", (() => e())), t.addEventListener("error", (() => n()))) })), s = t => new Promise(((e, n) => { t.readyState >= 2 || t.poster ? e() : (t.addEventListener("loadeddata", (() => e())), t.addEventListener("error", (() => n()))) })), i = (t, e) => { const { fontFamily: n, fontStyle: o, fontWeight: a } = getComputedStyle(t), r = e.get(`${n}_${o}_${a}`); return (null == r ? void 0 : r.loaded) || document.fonts.ready }; !function (e, n = Number.MAX_VALUE) { var o; (window.canva_scriptExecutor = null !== (o = window.canva_scriptExecutor) && void 0 !== o ? o : new t).runOnLoad({ callback: e, priority: n }) }((() => { (() => { const t = document.querySelectorAll(".animation_container"); if (0 === t.length) return; const n = new IntersectionObserver((t => { t.forEach((t => { if (!t.isIntersecting) return; const o = t.target; e(o), n.unobserve(o) })) }), { threshold: .01 }); t.forEach((t => n.observe(t))) })() })) }();</script>
-    <script
-      nonce="">!function () { "use strict"; function t(t, n) { let e; return (...o) => { clearTimeout(e), e = setTimeout((() => { t(...o) }), n) } } class n { constructor() { this.callbacks = [], window.addEventListener("DOMContentLoaded", (() => this.onDOMContentLoaded())) } onDOMContentLoaded() { this.callbacks.sort(((t, n) => t.priority - n.priority)).forEach((({ callback: t }) => t())) } runOnLoad(t) { "loading" === document.readyState ? this.callbacks.push(t) : t.callback() } } function e(t, e = Number.MAX_VALUE) { var o; (window.canva_scriptExecutor = null !== (o = window.canva_scriptExecutor) && void 0 !== o ? o : new n).runOnLoad({ callback: t, priority: e }) } class o { constructor(t) { this.items = [], this.previousWidth = document.documentElement.clientWidth, this.previousHeight = window.innerHeight; const n = t((() => this.onWindowResize()), 100); window.addEventListener("resize", n) } onWindowResize() { const t = document.documentElement.clientWidth, n = window.innerHeight, e = this.previousWidth !== t, o = this.previousHeight !== n; this.items.forEach((t => { const n = () => { t.callback(), t.executed = !0 }; (!t.executed || e && t.options.runOnWidthChange || o && t.options.runOnHeightChange) && n() })), this.previousWidth = t, this.previousHeight = n } runOnResize(t, n) { this.items.push({ callback: t, options: n, executed: n.runOnLoad }), this.items.sort(((t, n) => t.options.priority - n.options.priority)), n.runOnLoad && e(t, n.priority) } } function i(n, e, i = t) { var r; (window.canva_debounceResize = null !== (r = window.canva_debounceResize) && void 0 !== r ? r : new o(i)).runOnResize(n, { runOnLoad: !1, runOnWidthChange: !0, runOnHeightChange: !1, priority: Number.MAX_VALUE, ...e }) } const r = "--minfs", c = "--rzf", u = "--rfso", s = "--bfso"; function a(t, n, e = .001) { return Math.abs(t - n) < e } function d(t, n) { return window.getComputedStyle(t).getPropertyValue(n) } function l(t, n, e) { t.style.setProperty(n, e) } function m(t, n) { const e = document.createElement("div"); e.style.setProperty(t, n), document.body.append(e); const o = d(e, t); return e.remove(), o } function f() { const t = function () { const t = parseFloat(m("font-size", "0.1px")); return t > 1 ? t : 0 }(), n = function (t) { const n = 2 * Math.max(t, 1); return n / parseFloat(m("font-size", `${n}px`)) }(t); if (function (t) { if (0 === t) return; l(document.documentElement, r, `${t}px`), i((() => { const n = 100 * t, { clientWidth: e } = document.documentElement; l(document.documentElement, c, n > e ? (e / n).toPrecision(4) : null) }), { runOnLoad: !0 }) }(t * Math.max(1, n)), a(n, 1)) return; const e = a(parseFloat(d(document.documentElement, "font-size")), parseFloat(m("grid-template-columns", "1rem"))); l(document.documentElement, e ? u : s, n.toPrecision(4)) } function h() { document.querySelectorAll("img, image, video, svg").forEach((t => t.addEventListener("contextmenu", (t => t.preventDefault())))) } const p = "--sbw", g = "--inner1Vh"; function w(t, n, e) { t.style.setProperty(n, e) } function v() { w(document.documentElement, g, window.innerHeight / 100 + "px"), function () { const t = window.innerWidth - document.documentElement.clientWidth; w(document.documentElement, p, t >= 0 ? `${t}px` : null) }() } var y; const E = "undefined" != typeof window ? null === (y = window.navigator) || void 0 === y ? void 0 : y.userAgent : void 0; const b = !(!E || (O = E, !O.match(/AppleWebKit\//) || O.match(/Chrome\//) || O.match(/Chromium\//))); var O; function L() { document.querySelectorAll("svg").forEach((t => t.style.background = "url('data:image/png;base64,')")) } let x; function A() { x || (x = Array.from(document.querySelectorAll("foreignObject")).filter((t => 0 === t.getBoundingClientRect().width))); const t = function () { const t = document.createElement("div"); t.style.fontSize = "100vw", document.body.append(t); const n = parseFloat(window.getComputedStyle(t).fontSize); return t.remove(), n / window.innerWidth }(); Array.from(x).forEach((n => function (t) { return new Promise(((n, e) => { const o = t.querySelector("img"); o && !o.complete ? (o.addEventListener("load", (() => n())), o.addEventListener("error", (() => e()))) : n() })) }(n).finally((() => function (t, n) { const e = Array.from(t.children); e.forEach(((t, n) => { if (t.hasAttribute("data-foreign-object-container")) t.style.transformOrigin = "", t.style.transform = ""; else { const o = document.createElement("div"); o.setAttribute("data-foreign-object-container", ""), t.insertAdjacentElement("beforebegin", o), t.remove(), o.append(t), e[n] = o } })); const o = t.getScreenCTM(); if (!o) return; const { a: i, b: r, c: c, d: u } = o.scale(n); e.forEach((t => { if (!t.hasAttribute("data-foreign-object-container")) return; const { style: n } = t; n.transformOrigin = "0px 0px", n.transform = `matrix(${i}, ${r}, ${c}, ${u}, 0, 0)` })) }(n, t))))) } [function () { e(f) }, function () { i(v, { runOnLoad: !0, runOnHeightChange: !0, priority: 1 }) }, function () { b && i(A, { runOnLoad: !0 }) }, function () { b && e(L) }, function () { e(h) }].forEach((t => t())) }();</script>
+    
   </div>
-  <script
-    nonce="">(function () { var js = "window['__CF$cv$params']={r:'822de99567f74528',t:'MTY5OTQ0NzUxOS43NjcwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);"; var _0xh = document.createElement('iframe'); _0xh.height = 1; _0xh.width = 1; _0xh.style.position = 'absolute'; _0xh.style.top = 0; _0xh.style.left = 0; _0xh.style.border = 'none'; _0xh.style.visibility = 'hidden'; document.body.appendChild(_0xh); function handler() { var _0xi = _0xh.contentDocument || _0xh.contentWindow.document; if (_0xi) { var _0xj = _0xi.createElement('script'); _0xj.innerHTML = js; _0xi.getElementsByTagName('head')[0].appendChild(_0xj); } } if (document.readyState !== 'loading') { handler(); } else if (window.addEventListener) { document.addEventListener('DOMContentLoaded', handler); } else { var prev = document.onreadystatechange || function () { }; document.onreadystatechange = function (e) { prev(e); if (document.readyState !== 'loading') { document.onreadystatechange = prev; handler(); } }; } })();</script>
-  <iframe height="1" width="1"
-    style="position: absolute; top: 0px; left: 0px; border: medium; visibility: hidden;"></iframe>
+  
+  
 </body>
 
 </html>
